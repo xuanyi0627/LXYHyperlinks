@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndx-gi-Pvy" customClass="LXYHyperlinksButton">
+                                <rect key="frame" x="260" y="102" width="81" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="oBW-6I-3WX"/>
+                                </constraints>
+                                <state key="normal" title="我是按钮">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是标签" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80g-kn-E45" customClass="LXYHyperlinksLabel">
+                                <rect key="frame" x="266" y="167" width="69" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="Yx8-JU-ls1"/>
+                                    <constraint firstAttribute="height" constant="21" id="dGg-TQ-P3o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="80g-kn-E45" secondAttribute="centerX" constant="-0.5" id="Dpi-vS-T8j"/>
+                            <constraint firstAttribute="centerX" secondItem="Ndx-gi-Pvy" secondAttribute="centerX" constant="-0.5" id="fsr-oM-r5i"/>
+                            <constraint firstItem="80g-kn-E45" firstAttribute="top" secondItem="Ndx-gi-Pvy" secondAttribute="bottom" constant="35" id="xiJ-g5-5hF"/>
+                            <constraint firstItem="Ndx-gi-Pvy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="82" id="y7u-tS-CzZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="linksBut" destination="Ndx-gi-Pvy" id="PvO-Tf-s2U"/>
+                        <outlet property="linksLabel" destination="80g-kn-E45" id="1aR-uz-r9T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
